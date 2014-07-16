@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<skills>
+	<skill>
+		<id>1</id>
+		<targets>
+			<target>self</target>
+			<target>ally</target>
+			<target>foe</target>
+		</targets>
+		<conditions>
+			<condition>
+				<type>range</type>
+				<minValue>0</minValue>
+				<maxValue>1000</maxValue>
+			</condition>
+			<condition>
+				<type>radius</type>
+				<minValue>0</minValue>
+				<maxValue>1000</maxValue>				
+			</condition>
+		</conditions>
+		<actions>
+			<action>
+				<type>healing</type>
+				<value>3920</value>
+				<ratio>0.6</ratio>
+			</action>	
+		</actions>
+	</skill>
+</skills>

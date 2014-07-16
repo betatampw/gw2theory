@@ -130,4 +130,63 @@ skills = [{
       ratio : 0.2,
     }]
   }]
+}, {
+  id : 5,
+  actions : [{
+    terms : [],
+    effects : [{
+      type : 'summon',
+      summon : 'Mistfire Wolf',
+      duration : 60,
+      range : 1200
+    }]
+  }]
+}, {
+  id : 6,
+  actions : [{
+    terms : [{
+      type : 'modeInactive',
+      mode : 'fire'
+    }],
+    effects : [{
+      type : 'modeChenge',
+      mode : 'fire'
+    }]
+  }]
+}, {
+  id : 7,
+  actions : [{
+    terms : [{
+      type : 'modeInactive',
+      mode : 'water'
+    }],
+    effects : [{
+      type : 'modeChenge',
+      mode : 'water'
+    }]
+  }]
+}, {
+  id : 8,
+  actions : [{
+    terms : [{
+      type : 'modeInactive',
+      mode : 'air'
+    }],
+    effects : [{
+      type : 'modeChenge',
+      mode : 'air'
+    }]
+  }]
+}, {
+  id : 9,
+  actions : [{
+    terms : [{
+      type : 'modeInactive',
+      mode : 'earth'
+    }],
+    effects : [{
+      type : 'modeChenge',
+      mode : 'earth'
+    }]
+  }]
 }];

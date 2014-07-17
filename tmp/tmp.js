@@ -21,6 +21,10 @@ skills = [{
       from: 'self',  // self ally foe
       to: 'foe',  // self ally foe
       value: [0,1000]
+    },{
+      type : 'stateExist',
+      target : 'self', // self ally foe
+      state : 'Magnetic Shield' // Magnetic Shield
     }],
     effects : [{
       type : 'healing',
@@ -45,9 +49,10 @@ skills = [{
       target : 'foe', // self ally foe
       value : 158,
       ratio : 0.651,
+      multiply : 5
     },{
       type : 'combofinisher',
-      combofinisher: 'Physical Projectile', // Physical Projectile | Leap
+      combofinisher: 'Physical Projectile', // Physical Projectile | Leap | Blast
       percent : 20,
     },{
       type : 'conditionApply',
@@ -65,6 +70,15 @@ skills = [{
       type : 'action',
       action: 'jump',
       value: [0,700] 
+    },{
+      type : 'stateApply',
+      state : 'Magnetic Shield' // Magnetic Shield
+      target: 'self',  // self ally foe
+      duration: 3,
+    },{
+      type : 'stateRemove',
+      state : 'Magnetic Shield' // Magnetic Shield
+      target: 'self',  // self ally foe
     }]
   }]
 }]; 

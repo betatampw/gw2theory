@@ -16,6 +16,11 @@ skills = [{
     },{
       type : 'modeActive',
       mode : 'fire' // fire water air earth
+    },{
+      type: 'range',
+      from: 'self',  // self ally foe
+      to: 'foe',  // self ally foe
+      value: [0,1000]
     }],
     effects : [{
       type : 'healing',
@@ -29,12 +34,37 @@ skills = [{
       number: 1
     },{
       type : 'summon',
-      summon : 'Mistfire Wolf', // Mistfire Wolf | Packaged Antitoxin
+      summon : 'Mistfire Wolf', // Mistfire Wolf | Packaged Antitoxin | Glue Shot
       duration : 60,
       range : 1200
     },{
       type : 'modeChenge',
       mode : 'fire' // fire water air earth
+    },{
+      type : 'damage',
+      target : 'foe', // self ally foe
+      value : 158,
+      ratio : 0.651,
+    },{
+      type : 'combofinisher',
+      combofinisher: 'Physical Projectile', // Physical Projectile | Leap
+      percent : 20,
+    },{
+      type : 'conditionApply',
+      target : 'foe', // self ally foe
+      condition : 'immobilize', // bleeding blindness burning chilled confusion cripple fear immobilize poison torment vulnerability weakness any
+      duration: 4,
+      stacks: 1
+    },{
+      type : 'controlApply',
+      target : 'foe', // self ally foe
+      control : 'daze', // daze float knockback knockdown launch quickness sink stealth stun teleport 
+      duration: 4,
+      distance: 100
+    },{
+      type : 'action',
+      action: 'jump',
+      value: [0,700] 
     }]
   }]
 }]; 

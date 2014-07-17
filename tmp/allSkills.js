@@ -136,7 +136,7 @@ skills = [{
     terms : [],
     effects : [{
       type : 'summon',
-      summon : 'Mistfire Wolf',
+      summon : 'Packaged Antitoxin',
       duration : 60,
       range : 1200
     }]
